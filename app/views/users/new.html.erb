@@ -1,0 +1,13 @@
+
+
+<h1>Create User </h1>
+
+<%= form_for @user do |f| %>
+	First Name: <%=f.text_field :fname %><br />
+	Last Name: <%=f.text_field :lname %><br />
+	Email: <%=f.text_field :email %>
+	Password: <%=f.label :password %>
+	Confirm Password:<%=f.password_field :password %><br />
+	<%=f.submit "Submit" %>
+<% end %>
+<%= debug params %>
